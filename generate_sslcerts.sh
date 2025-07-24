@@ -8,7 +8,7 @@ openssl genrsa -out ca.key 2048
 
 # Generate CA certificate
 openssl req -x509 -new -nodes -key ca.key -sha256 -days 3650 -out ca.crt \
--subj "/C=NP/ST=Kathmandu/L=Kathmandy/O=Trading/OU=Rabindra/CN=domain_name/emailAddress=rabindraabasnet@gmail.com"
+-subj "/C=NP/ST=Kathmandu/L=Kathmandy/O=Trading/OU=Rabindra/CN=domain_name/emailAddress=email_address"
 
 # Generate server private key
 openssl genrsa -out server.key 2048
